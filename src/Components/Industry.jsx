@@ -18,7 +18,7 @@ export default function Industry() {
                     <div className='flex gap-32 flex-wrap '>
                         {
                             extractedData.map(([key, value]) => (<div>
-                                <div className="flex flex-col items-center gap-5">
+                                <div className="flex flex-col items-center gap-5 cursor-pointer">
                                     <img className='w-[50px] h-[50px]' src={value.image} alt={value.image} />
                                     <h2 className='text-center'>{value.title}</h2>
                                 </div>
