@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Industry from "./Industry";
 
 export const Data = {
@@ -229,6 +230,25 @@ export const Data = {
             title: "Education",
             image: "https://uptechwebsolutions.com/images/Education.png"
         },
+    },
+    Footer: {
+        Menu: ["Home", "About", "Service", "Contact"],
+        ContactUs: {
+            phone: ["+91 97140-27278 , +91 88663-14513"],
+            emai: ["contact@uptechwebsolutions.com"],
+            Address: [" 411-412, Shrenathji Icon, opp.Utran, Mota Varachha, Surat - 394101"]
+        },
+        About: {
+            title: ["About Uptech Solutions"],
+            content: "Welcome to Uptech Solution, a reputable digital agency based in Surat, India. We excel in providing high-quality, budget-friendly, and dependable solutions for mobile and web development tailored to the diverse requirements of our worldwide clients",
+            images: [
+                "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-vector%2Finstagram-vector-social-media-icon-instagram-logo-illustration_153454-578.jpg%3Fw%3D2000&f=1&nofb=1&ipt=0b298cde7364db1c5a15c0633dba4d6e7279fdcc384374dc242e20f4b7e45286&ipo=images",
+
+                "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F021%2F460%2F490%2Foriginal%2Flinkedin-logo-free-download-free-png.png&f=1&nofb=1&ipt=78c9a4cd7d22f7d5651fa1c78a9c1f140b3b9708181c7856c75d8316eed0938f&ipo=images",
+
+                "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhdclipartall.com%2Fimages%2Fyoutube-clipart-youtube-square-icons-1600x1600.png&f=1&nofb=1&ipt=2e46d75e5c870bca54e9c94b3e90af9eeed741a2b88233634e61965d0a31178f&ipo=images"
+            ]
+        }
     }
 };
 
