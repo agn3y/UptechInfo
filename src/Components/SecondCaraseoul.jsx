@@ -2,26 +2,25 @@ import { motion } from 'framer-motion';
 import React from 'react';
 
 const images = [
-    'https://images.pexels.com/photos/213962/pexels-photo-213962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/279404/pexels-photo-279404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/87001/pexels-photo-87001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/93702/pexels-photo-93702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/268904/pexels-photo-268904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/105170/pexels-photo-105170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/162354/harris-hawk-hawk-harris-bird-162354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/59681/pexels-photo-59681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/395196/pexels-photo-395196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/259658/pexels-photo-259658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    "https://images.unsplash.com/photo-1730528220487-80ed488ad546?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1528475734108-88a7b30257bb?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1705904506592-d8a0d5392c66?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1705904506562-f28266845273?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://plus.unsplash.com/premium_photo-1668004507192-af7309898238?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    'https://images.pexels.com/photos/29781604/pexels-photo-29781604/free-photo-of-crescent-moon-in-black-night-sky-celestial-photography.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    'https://images.pexels.com/photos/10361459/pexels-photo-10361459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    'https://images.pexels.com/photos/10632837/pexels-photo-10632837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    'https://images.pexels.com/photos/16075343/pexels-photo-16075343/free-photo-of-handmade-dolls-and-football-world-cup-trophy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 ];
 
 export default function SecondCarousel() {
     return (
-        <div className="overflow-hidden w-full max-w-[1600px] mx-auto px-6 my-20 flex-wrap">
+        <div className="overflow-hidden w-full max-w-[1600px] mx-auto px-6 my-20 flex-wrap relative">
             <motion.div
                 className="flex whitespace-nowrap gap-7"
-                animate={{ x: ["-50%", "0%"] }} // Moves left to right
+                animate={{ x: ["-100%", "0%"] }} // Moves right to left
                 transition={{
-                    duration: 10,
+                    duration: 12,
                     repeat: Infinity,
                     ease: "linear",
                 }}
